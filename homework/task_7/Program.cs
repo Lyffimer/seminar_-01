@@ -3,7 +3,15 @@
 //782 -> 2
 //918 -> 8
 
+
+
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int remainder = (number % 10);
-Console.Write($"Последнее число {remainder}");
+
+if (number < 1000 & number > 99)//сначала я сделал без проверки на трехзначность, но меня убедили что она нужна))))
+{
+    int remainder = (number % 10);
+    Console.Write($"Последнее число {remainder}");
+}
+else Console.Write($"Число не трехзначное");
+
